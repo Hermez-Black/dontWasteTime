@@ -1,0 +1,13 @@
+{
+    "name": "CrackTime",
+    "version": "1.0",
+    "description": "An extension that help you to avoid distractions in YouTube",
+    "manifest_version": 3,
+    "action": { "default_popup": "index.html" },
+    "content_scripts": [
+        {
+            "js": ["src/content.js"],
+            "matches": ["https://www.youtube.com/*"]
+        }
+    ]
+}

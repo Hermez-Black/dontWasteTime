@@ -1,0 +1,15 @@
+"content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["contentscript.js"]
+        }
+    ]
+
+
+    import { defineConfig } from "vite";
+import { crx } from "@crxjs/vite-plugin";
+import manifest from "./manifest.json";
+
+export default defineConfig({
+  plugins: [crx({ manifest })],
+});
